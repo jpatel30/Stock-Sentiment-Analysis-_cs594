@@ -1,0 +1,20 @@
+http://ichart.yahoo.com/table.csv?s=GOOG&a=4&b=1&c=2015&d=4&e=20&f=2015&g=w 
+
+
+
+a = month - 1
+b = day
+c = year
+
+https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20csv%20where%20url%3D%27http%3A%2F%2Fichart.finance.yahoo.com%2Ftable.csv%3Fs%3DGOOG%26a%3D3%26b%3D1%26c%3D2015%26d%3D4%26e%3D20%26f%3D2015%26g%3Dw%27&format=json&diagnostics=true&callback=
+
+https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20csv%20where%20url%3D%27http%3A%2F%2Fichart.finance.yahoo.com%2Ftable.csv%3Fs%3D'+line.rstrip()+'%27&format=json&diagnostics=true&callback=
+
+<p style="text-align: justify; line-height: 17.92px; font-family: Verdana, Geneva, sans-serif;"><a href="/sites/default/files/groups/Department of Marketing/marketing.jpg" target="_self"><img alt="Department of Marketing" src="/sites/default/files/groups/Department%20of%20Marketing/marketing.jpg" style="width: 843px; height: 276px;" /></a></p><p style="text-align: justify; line-height: 17.92px; font-family: Verdana, Geneva, sans-serif;">Welcome to the web site! The mission of the Department of Marketing is to educate qualified marketing academics and practitioners that possess not only technical and leadership skills but also high quality research abilities which can serve as a foundation to advance Marketing practice. <span style="margin-bottom: 0px;">This is achieved through adapting the most recent technologies and instruments that would serve both the theoretical as well as the practical dimensions.</span>&nbsp;It also provides students in undergraduate, graduate and certificate programs the intellectual, ethical, and professional marketing skills needed to enter and succeed in their chosen professional and managerial careers, and to make positive contributions to the local and global marketplace.</p><p class="style25" style="margin-top: 0px;">&nbsp;</p><p style="line-height: 17.92px; font-family: Verdana, Geneva, sans-serif;">To this end, the Department&#39;s emphasis is on &quot;<strong>Excellence In Teaching Through Practical Application</strong>&quot; in the following:</p><p style="text-align: center; line-height: 17.92px; font-family: Verdana, Geneva, sans-serif;"><a href="http://www.calstatela.edu/business/marketing/undergraduate-programs" target="_self"><span style="color: rgb(255, 0, 0);"><strong>Undergraduate Options</strong></span></a><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="http://www.calstatela.edu/business/marketing/certificates-offered" target="_self"><span style="color: rgb(255, 0, 0);"><strong>Certificates Programs</strong></span></a><span style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><a href="http://www.calstatela.edu/business/marketing/masters-program" target="_self"><span style="color: rgb(255, 0, 0);">Graduate Options</span></a></strong></p><p style="line-height: 17.92px; font-family: Verdana, Geneva, sans-serif; margin-left: 40px;">&nbsp;</p><p style="line-height: 17.92px; font-family: Verdana, Geneva, sans-serif; margin-left: 80px;">&nbsp;</p><p style="line-height: 17.92px; font-family: Verdana, Geneva, sans-serif; margin-left: 80px;">&nbsp;</p><p style="line-height: 17.92px; font-family: Verdana, Geneva, sans-serif;">&nbsp;</p>
+
+/sites/default/files/groups/Department%20of%20Marketing/marketing_304.pdf
+
+
+Map Reduce Queries:
+
+1. db.test.mapReduce(function(){emit(this.cid, this.amoumt);}, function(key,values) {return Array.sum(values)},{query: {status: "A"}, out: "order_details"})

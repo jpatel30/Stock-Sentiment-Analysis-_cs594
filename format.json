@@ -1,0 +1,62 @@
+{
+  "header": {
+    "title": {
+      "text": "User's Sentiment On This Stock",
+      "fontSize": 24,
+      "font": "open sans"
+    },
+    "titleSubtitlePadding": 9
+  },
+  "data": {
+    "sortOrder": "value-desc",
+    "content": [
+      {
+        "label": "Buy",
+        "value": 70,
+        "color": "#27d727"
+      },
+      {
+        "label": "Sell",
+        "value": 30,
+        "color": "#e42b26"
+      }
+    ]
+  },
+  "labels": {
+    "outer": {
+      "pieDistance": 32
+    },
+    "mainLabel": {
+      "fontSize": 20
+    },
+    "percentage": {
+      "color": "#ffffff",
+      "decimalPlaces": 0,
+      "fontSize": 20
+    },
+    "value": {
+      "color": "#adadad",
+      "fontSize": 11
+    },
+    "lines": {
+      "enabled": true,
+      "style": "straight"
+    },
+    "truncation": {
+      "enabled": true
+    }
+  },
+  "effects": {
+    "pullOutSegmentOnClick": {
+      "effect": "linear",
+      "speed": 400,
+      "size": 8
+    }
+  },
+  "misc": {
+    "gradient": {
+      "enabled": true,
+      "percentage": 100
+    }
+  }
+}
